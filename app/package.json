@@ -1,0 +1,32 @@
+{
+  "name": "Odan-Urr",
+  "version": "0.0.1",
+  "description": "Odan-Urr is an ancient sass library, erected and developed by old Master Jedi and based on The Force (of atomic design).",
+  "author": "seraf <seraf@gmx.com>",
+  "license": "MIT",
+  "main": "dist/sass/odan-urr.scss",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raziel8/odan-urr.git"
+  },
+  "scripts": {
+    "develop": "gulp",
+    "build": "gulp dist",
+    "lint": "gulp lint"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.16.4",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-lint": "^1.4.0",
+    "require-dir": "^1.2.0",
+    "run-sequence": "^2.2.1"
+  }
+}
