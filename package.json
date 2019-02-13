@@ -13,9 +13,8 @@
     "url": "https://github.com/raziel8/odan-urr.git"
   },
   "scripts": {
-    "develop": "gulp",
-    "build": "gulp dist",
-    "lint": "gulp lint"
+    "build": "gulp sass",
+    "watch": "gulp watch"
   },
   "dependencies": {},
   "devDependencies": {
