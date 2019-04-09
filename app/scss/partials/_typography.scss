@@ -1,0 +1,70 @@
+// -------------------------------
+// --- TYPOGRAPHY
+// -------------------------------
+
+@import "variables";
+
+// $font-size-map: (
+//   '76': 4.75rem,
+//   '54': 3.375rem,
+//   '36': 2.25rem,
+//   '28': 1.75rem,
+//   '20': 1.25rem,
+//   '18': 1.125rem,
+//   '16': 1rem,
+//   '14': 0.875rem,
+//   '12': 0.75rem,
+//   '11': 0.6875rem,
+// );
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-primary;
+    color: $font-color--primary;
+}
+
+.#{$prefix}-typo {
+
+    &__h1 {
+        font-size: 2.25rem;
+    }
+
+    &__h2 {
+        font-size: 1.75rem;
+    }
+
+    &__h3 {
+        font-size: 1.25rem;
+    }
+
+    &__h4 {
+        font-size: 1.125rem;
+    }
+
+    &__h5 {
+        font-size: 1rem;
+    }
+
+    &__h6 {
+        font-size: 0.875rem;
+    }
+}
+
+p {
+    font-family: $font-primary;
+    font-size: $base-font-size;
+    font-weight: 400;
+    color: $font-color--primary;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}
