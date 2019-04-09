@@ -1,0 +1,35 @@
+// -------------------------------
+// --- COLORS
+// -------------------------------
+
+// -------------------------------
+// BRAND COLORS
+
+$color__brand--primary: #3ead52;
+$color__brand--secondary: #17405e;
+
+// -------------------------------
+// UI COLORS
+
+// Illustration brand colors
+$color__brand--3: #54819c;
+$color__brand--4: #89a8b5;
+$color__brand--5: #b2cbd9;
+
+// Classic colors
+$color__white: #fff;
+$color__black: #000;
+$color__white--safe: #efefef;  // websafe white-grey optimized for readability and contrast
+$color__black--safe: #333;     // websafe black-grey optimized for readability and contrast
+
+$color__red: #c71729; 
+$color__green: #45AE40;
+$color__blue: #2a76b4;
+$color__orange: #db8607;
+$color__purple: #960872;
+
+
+// Color scheme for UI backgrounds
+$color__blue-1: #f9fafc;  // Personal Equipment Page - device background
+$color__blue-2: #f7f8fd;  // Personal Tester Ranking - profile background + device background
+$color__blue-3: #1f398a;  // Personal Equipment Page - main title background
