@@ -22,14 +22,31 @@ $color__black: #000;
 $color__white--safe: #efefef;  // websafe white-grey optimized for readability and contrast
 $color__black--safe: #333;     // websafe black-grey optimized for readability and contrast
 
-$color__red: #c71729; 
+$color__red: #c71729;
 $color__green: #45AE40;
 $color__blue: #2a76b4;
 $color__orange: #db8607;
 $color__purple: #960872;
 
-
 // Color scheme for UI backgrounds
 $color__blue-1: #f9fafc;  // Personal Equipment Page - device background
 $color__blue-2: #f7f8fd;  // Personal Tester Ranking - profile background + device background
 $color__blue-3: #1f398a;  // Personal Equipment Page - main title background
+
+// Grays
+$color__gray-10: #f3f3f3;
+$color__gray-20: #DCDCDC;
+$color__gray-30: #BEBEBE;
+$color__gray-40: #a4a4a4;
+$color__gray-50: #8C8C8C;
+$color__gray-60: #6F6F6F;
+$color__gray-70: #565656;
+$color__gray-80: #3D3D3D;
+$color__gray-90: #282828;
+$color__gray-100: #171717;
+
+// Status colors
+$color__info: #0091D5;
+$color__success: #219840;
+$color__warning: #FDD13A;
+$color__danger: #D51A24;
