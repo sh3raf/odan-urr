@@ -1,0 +1,57 @@
+// -------------------------------
+// --- BUTTONS
+// -------------------------------
+
+.#{$prefix}-btn {
+    @include button-reset;
+    @include button-bg($color__brand--secondary);
+
+    padding: $btn-padding-y $btn-padding-x;
+    color: $color__white;
+    font-size: $base-font-size;
+    font-weight: $btn-font-weight;
+    border-radius: $btn-border-radius;
+    font-family: $font-primary;
+
+    &--small {
+        padding: $btn-padding-sm-y $btn-padding-sm-x;
+        font-size: .75rem;
+        line-height: .75rem;
+    }
+
+    &--large {
+        padding: $btn-padding-lg-y $btn-padding-lg-x;
+        font-size: 1.125rem;
+        line-height: 1.125rem;
+    }
+
+    &--hollow {
+        border: $btn-border solid $color__brand--secondary;
+        @include button-bg-hollow($color__brand--secondary);
+    }
+
+    &--ghost {
+        position: relative;
+        background: none;
+
+        &::after {
+            
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            transform: scaleX(0);
+            transition: all 0.3s ease;
+            content: "";
+            visibility: hidden;
+        }
+
+        @include button-bg-ghost($color__brand--secondary);
+
+        &:hover::after {
+            transform: scaleX(1);
+            visibility: visible;
+        }
+    }
+}

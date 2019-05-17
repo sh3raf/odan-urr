@@ -1,0 +1,58 @@
+// -------------------------------
+// --- MIXINS
+// -------------------------------
+
+//  BUTTONS
+
+@mixin button-reset {
+    display: inline-block;
+    margin: $null;
+    border: $btn-border solid transparent;
+    border-radius: $null;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+@mixin button-bg($bg) {
+    background: $bg;
+
+    &:hover {
+        background: darken($bg, 8%);
+        transition: all 0.3s ease;
+    }
+
+    &:active {
+        background: darken($bg, 25%);
+    }
+}
+
+@mixin button-bg-hollow($bg) {
+    background: rgba($bg, 0);
+    color: $bg;
+
+    &:hover {
+        color: lighten($bg, 100%);
+        background: darken($bg, 0%);
+        transition: all 0.3s ease;
+    }
+
+    &:active {
+        color: lighten($bg, 100%);
+        background: darken($bg, 25%);
+    }
+}
+
+@mixin button-bg-ghost($bg) {
+    color: $bg;
+
+    &::after {
+        background: $bg;
+    }
+    
+    &:hover {
+        background: rgba($bg, 0);
+    }
+}
