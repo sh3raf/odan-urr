@@ -1,0 +1,27 @@
+// -------------------------------
+// --- CARDS
+// -------------------------------
+
+.#{$prefix}-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    border: $card-border-width solid $card-border-color;
+    word-wrap: break-word; // https://webdesignerwall.com/tutorials/word-wrap-force-text-to-wrap
+    background-color: $color__gray-10;  // add variables $card-bg: $color__gray-10
+    box-sizing: border-box;
+    @include border-radius($card-border-radius);
+
+    &__header {
+
+    }
+
+    &__body {
+
+    }
+
+    &__footer {
+
+    }
+}
