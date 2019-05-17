@@ -3,18 +3,35 @@
 // -------------------------------
 
 // -------------------------------
-// BRAND PREFIXER
+//  BRAND PREFIXER
 
 $prefix: aq !default;
 
+//  GLOBAL
+
+$null: 0;
+
 // -------------------------------
-// FONT
+//  FONT
 
 $font-primary: sans-serif;
 $font-secondary: sans-serif;
 
-$base-font-size: 16px;  // browser default
-
+$base-font-size: 1rem;  // browser default usually = 16px
+$base-font-weight: 400;
 $line-height: 1.5;
 
 $font-color--primary: $color__black--safe;
+
+//  BUTTONS
+
+$btn-border: 1px;
+$btn-border-radius: 4px;
+$btn-padding-x: 1rem;
+$btn-padding-y: .5rem;
+$btn-padding-sm-x: .5rem;
+$btn-padding-sm-y: .25rem;
+$btn-padding-lg-x: 1.5rem;
+$btn-padding-lg-y: .75rem;
+
+$btn-font-weight: 400;
