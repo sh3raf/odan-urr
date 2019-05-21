@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     min-width: 0;
+    width: 100%;
     border: $card-border-width solid $card-border-color;
     word-wrap: break-word; // https://webdesignerwall.com/tutorials/word-wrap-force-text-to-wrap
     background-color: $color__gray-10;  // add variables $card-bg: $color__gray-10
@@ -14,11 +15,22 @@
     @include border-radius($card-border-radius);
 
     &__header {
-
+        &__img {
+            max-width: 100%;
+            height: auto;
+        }
     }
 
     &__body {
+        padding: $spacing-values[5];
+    }
 
+    &__title {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: $line-height;
+        margin: 0;
+        padding: 0;
     }
 
     &__footer {
