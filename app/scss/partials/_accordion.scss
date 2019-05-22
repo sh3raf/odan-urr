@@ -1,0 +1,55 @@
+// -------------------------------
+// --- ACCORDION
+// -------------------------------
+
+.#{$prefix}-accordion {
+    
+    width: 100%;
+    margin: auto;
+    border: 1px solid $color__gray-30;
+    list-style: none;
+    box-sizing: border-box;
+
+    &:last-child {
+        border-bottom: 1px solid $color__gray-30;
+    }
+
+    &__header {
+        width: 100%;
+        margin: 0;
+        padding: .5rem 0;
+        color: $font-color--primary;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        position: relative;
+    
+        & svg {
+        }
+
+        &:hover:before,
+        &:focus:before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: 0;
+            width: 100%;
+            height: calc(100% + 2px);
+        }
+
+        &:hover:before {
+            background-color: $color__gray-10;
+        }
+      
+    }
+
+    &__title {
+
+    }
+
+    &__content {
+        
+    }
+}
+    
