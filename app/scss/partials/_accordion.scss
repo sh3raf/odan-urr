@@ -63,7 +63,6 @@
 
     &__content {
         display: none;
-
     }
 
     // SEO friendly due it's not display: none and the crawler could parse the content
@@ -79,14 +78,16 @@
     }
 }
 
-.#{$prefix}-accordion[expanded] {
+.#{$prefix}-accordion__item[expanded] {
 
     & .#{$prefix}-accordion__content {
         display: block;
         position: relative;
         width: 100%;
         height: 100%;
-        margin: 1rem 0;
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+        margin-left: .5rem;
         box-sizing: border-box;
     }
 
@@ -95,12 +96,13 @@
         position: relative;
         width: 100%;
         height: 100%;
-        margin-top: 1rem;
+        margin-top: .5rem;
         margin-bottom: 1rem;
+        margin-left: .5rem;
         box-sizing: border-box;
     }
 
     & .#{$prefix}-accordion__icon {
-        transform: rotate(180deg);
+        transform: rotate(-90deg);
     }
 }
