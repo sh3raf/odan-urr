@@ -5,13 +5,18 @@
 .#{$prefix}-accordion {
     
     width: 100%;
-    margin: auto;
-    border: 1px solid $color__gray-30;
+    margin: 0;
+    padding: 0;
     list-style: none;
-    box-sizing: border-box;
 
-    &:last-child {
-        border-bottom: 1px solid $color__gray-30;
+    &__item {
+        margin: 0;
+        border-top: 1px solid $color__gray-30;
+        box-sizing: border-box;
+
+        &:last-child {
+            border-bottom: 1px solid $color__gray-30;
+        }
     }
 
     &__header {
@@ -26,6 +31,7 @@
         position: relative;
     
         & svg {
+            z-index: 0;
         }
 
         &:hover:before,
@@ -45,11 +51,42 @@
     }
 
     &__title {
-
+        color: $font-color--primary;
+        z-index: 0;
     }
 
     &__content {
-        
+        display: none;
+
+    }
+
+    // SEO friendly due it's not display: none and the crawler could parse the content
+    &__content-seo {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
     }
 }
-    
+
+.#{$prefix}-accordion[expanded] {
+
+    & .#{$prefix}-accordion__content-seo {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+
+    & .#{$prefix}-accordion__icon {
+        transform: rotate(180deg);
+    }
+}
