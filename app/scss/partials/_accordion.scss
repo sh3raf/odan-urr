@@ -5,51 +5,106 @@
 .#{$prefix}-accordion {
     
     width: 100%;
-    margin: auto;
-    border: 1px solid $color__gray-30;
+    margin: 0;
+    padding: 0;
     list-style: none;
-    box-sizing: border-box;
 
-    &:last-child {
-        border-bottom: 1px solid $color__gray-30;
+    &__item {
+        margin: 0;
+        box-sizing: border-box;
+
+        // &:last-child {
+        //     border-bottom: 1px solid $color__gray-30;
+        // }
     }
 
     &__header {
         width: 100%;
         margin: 0;
         padding: .5rem 0;
+        padding-left: 1rem;
+        border: $accordion-border-width solid $accordion-border-color;
+        border-radius: $accordion-border-radius;
         color: $font-color--primary;
         display: flex;
         align-items: center;
         justify-content: space-between;
         cursor: pointer;
         position: relative;
+        box-sizing: border-box;
     
+        // fallback for missing class for icons
         & svg {
+            z-index: 0;
         }
 
-        &:hover:before,
-        &:focus:before {
-            content: '';
-            position: absolute;
-            top: -1px;
-            left: 0;
-            width: 100%;
-            height: calc(100% + 2px);
-        }
+        // &:hover:before,
+        // &:focus:before {
+        //     content: '';
+        //     position: absolute;
+        //     top: -1px;
+        //     left: 0;
+        //     width: 100%;
+        //     height: calc(100% + 2px);
+        // }
 
-        &:hover:before {
+        &:hover {
             background-color: $color__gray-10;
         }
       
     }
 
-    &__title {
+    &__icon {
+        position: relative;
+        right: 1rem;
+        transform: rotate(90deg);
+        z-index: 0;
+    }
 
+    &__title {
+        color: $font-color--primary;
+        z-index: 0;
     }
 
     &__content {
-        
+        display: none;
+    }
+
+    // SEO friendly due it's not display: none and the crawler could parse the content
+    &__content-seo {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
     }
 }
-    
+
+.#{$prefix}-accordion__item[expanded] {
+
+    border: $accordion-border-width solid $accordion-border-color;
+    border-radius: $accordion-border-radius;
+
+    & .#{$prefix}-accordion__content,
+    & .#{$prefix}-accordion__content-seo {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-top: .25rem;
+        margin-bottom: 1.5rem;
+        padding: 1rem .5rem;
+        box-sizing: border-box;
+    }
+
+    & .#{$prefix}-accordion__icon {
+        transform: rotate(-90deg);
+    }
+
+    & .#{$prefix}-accordion__header {
+        border: none;
+    }
+}

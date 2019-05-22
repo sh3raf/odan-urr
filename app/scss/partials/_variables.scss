@@ -38,6 +38,12 @@ $btn-font-weight: 400;
 
 //  CARDS
 
-$card-border-width: 1;
+$card-border-width: 1px;
 $card-border-color: transparent;
 $card-border-radius: 4px;
+
+//  ACCORDIONS
+
+$accordion-border-width: 1px;
+$accordion-border-color: $color__gray-30;
+$accordion-border-radius: 4px;

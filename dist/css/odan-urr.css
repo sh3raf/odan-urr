@@ -408,7 +408,7 @@ em {
   flex-direction: column;
   min-width: 0;
   width: 100%;
-  border: 1 solid transparent;
+  border: 1px solid transparent;
   word-wrap: break-word;
   background-color: #fff;
   box-sizing: border-box;
@@ -496,3 +496,69 @@ em {
 
 .aq-bg-brand--5 {
   background: #b2cbd9; }
+
+.aq-accordion {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .aq-accordion__item {
+    margin: 0;
+    box-sizing: border-box; }
+  .aq-accordion__header {
+    width: 100%;
+    margin: 0;
+    padding: .5rem 0;
+    padding-left: 1rem;
+    border: 1px solid #BEBEBE;
+    border-radius: 4px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box; }
+    .aq-accordion__header svg {
+      z-index: 0; }
+    .aq-accordion__header:hover {
+      background-color: #f3f3f3; }
+  .aq-accordion__icon {
+    position: relative;
+    right: 1rem;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    z-index: 0; }
+  .aq-accordion__title {
+    color: #333;
+    z-index: 0; }
+  .aq-accordion__content {
+    display: none; }
+  .aq-accordion__content-seo {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0); }
+
+.aq-accordion__item[expanded] {
+  border: 1px solid #BEBEBE;
+  border-radius: 4px; }
+  .aq-accordion__item[expanded] .aq-accordion__content,
+  .aq-accordion__item[expanded] .aq-accordion__content-seo {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: .25rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem .5rem;
+    box-sizing: border-box; }
+  .aq-accordion__item[expanded] .aq-accordion__icon {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+  .aq-accordion__item[expanded] .aq-accordion__header {
+    border: none; }
