@@ -78,7 +78,7 @@ There are some pre-made elements like
 - `aq-card__title`
 - `aq-card__text`
 
-tha you can use to style internal element of a card.
+that you can use to style internal element of a card.
 
 #### Accordions
 
