@@ -447,3 +447,24 @@ em {
     border-top: 1px solid #BEBEBE;
     padding: 1rem 0;
     color: #6F6F6F; }
+
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  font-weight: normal; }
+
+input:-webkit-autofill {
+  box-shadow: none; }
+
+.aq-input {
+  appearance: none;
+  padding: 0.5rem 1rem;
+  color: #333;
+  border: 1px solid #3D3D3D;
+  border-radius: 4px; }
