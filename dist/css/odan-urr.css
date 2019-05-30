@@ -562,3 +562,26 @@ em {
             transform: rotate(-90deg); }
   .aq-accordion__item[expanded] .aq-accordion__header {
     border: none; }
+
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  font-weight: normal; }
+
+input:-webkit-autofill {
+  box-shadow: none; }
+
+.aq-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0.5rem 1rem;
+  color: #333;
+  border: 1px solid #3D3D3D;
+  border-radius: 4px; }
