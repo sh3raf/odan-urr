@@ -38,7 +38,7 @@ $btn-font-weight: 400;
 
 //  CARDS
 
-$card-border-width: 1;
+$card-border-width: 1px;
 $card-border-color: transparent;
 $card-border-radius: 4px;
 
@@ -48,3 +48,6 @@ $inp-border: $btn-border;
 $inp-border-radius: $btn-border-radius;
 $inp-padding-x: $btn-padding-x;
 $inp-padding-y: $btn-padding-y;
+
+$chk-border: 2px;
+$chk-border-radius: 50%;
