@@ -455,7 +455,7 @@ input:-webkit-autofill {
   appearance: none;
   padding: 0.5rem 1rem;
   color: #333;
-  border: 1px solid #3D3D3D;
+  border: 1px solid #6F6F6F;
   border-radius: 4px; }
 
 input[type="radio"].aq-checkbox {
@@ -528,3 +528,8 @@ input[type="checkbox"].aq-checkbox:checked ~ .aq-checkbox-toggle {
   border-color: #219840;
   background: #219840 url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=) center no-repeat;
   background-size: 75%; }
+
+input[type="radio"].aq-checkbox ~ label,
+input[type="checkbox"].aq-checkbox ~ label {
+  vertical-align: middle;
+  font-size: 1rem; }
