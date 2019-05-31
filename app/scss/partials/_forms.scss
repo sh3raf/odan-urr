@@ -66,9 +66,36 @@ input[type="radio"].#{$prefix}-checkbox ~ .#{$prefix}-checkbox-toggle {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    border: $chk-border solid $color__gray-70;
+    border: $chk-border solid $color__gray-60;
     border-radius: $chk-border-radius;
     cursor: pointer;
+}
+
+input[type="radio"].#{$prefix}-checkbox:hover ~ .#{$prefix}-checkbox-toggle {
+    border: $chk-border solid $color__gray-80;
+}
+
+input[type="radio"].#{$prefix}-checkbox:focus ~ .#{$prefix}-checkbox-toggle {
+    border-color: $color__gray-80;
+    box-shadow: 0 0 0 2px rgba(75, 75, 75, 0.25);
+}
+
+input[type="radio"].#{$prefix}-checkbox:checked ~ .#{$prefix}-checkbox-toggle {
+    border: $chk-border solid $color__success;
+}
+
+input[type='radio'].#{$prefix}-checkbox:checked ~ .#{$prefix}-checkbox-toggle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    border-radius: $chk-border-radius;
+    background: $color__success;
 }
 
 //  INPUT type="checkbox"
@@ -93,17 +120,17 @@ input[type="checkbox"].#{$prefix}-checkbox ~ .#{$prefix}-checkbox-toggle {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    border: $chk-border solid $color__gray-70;
+    border: $chk-border solid $color__gray-60;
     border-radius: $chk-border-radius;
     cursor: pointer;
 }
 
 input[type="checkbox"].#{$prefix}-checkbox:hover ~ .#{$prefix}-checkbox-toggle {
-    border-color: $color__gray-90;
+    border-color: $color__gray-80;
 }
 
 input[type="checkbox"].#{$prefix}-checkbox:focus ~ .#{$prefix}-checkbox-toggle {
-    border-color: $color__gray-90;
+    border-color: $color__gray-80;
     box-shadow: 0 0 0 2px rgba(75, 75, 75, 0.25);
 }
 

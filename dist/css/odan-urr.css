@@ -472,9 +472,32 @@ input[type="radio"].aq-checkbox ~ .aq-checkbox-toggle {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  border: 2px solid #565656;
+  border: 2px solid #6F6F6F;
   border-radius: 50%;
   cursor: pointer; }
+
+input[type="radio"].aq-checkbox:hover ~ .aq-checkbox-toggle {
+  border: 2px solid #3D3D3D; }
+
+input[type="radio"].aq-checkbox:focus ~ .aq-checkbox-toggle {
+  border-color: #3D3D3D;
+  box-shadow: 0 0 0 2px rgba(75, 75, 75, 0.25); }
+
+input[type="radio"].aq-checkbox:checked ~ .aq-checkbox-toggle {
+  border: 2px solid #219840; }
+
+input[type='radio'].aq-checkbox:checked ~ .aq-checkbox-toggle::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  border-radius: 50%;
+  background: #219840; }
 
 input[type="checkbox"].aq-checkbox {
   position: absolute;
@@ -490,15 +513,15 @@ input[type="checkbox"].aq-checkbox ~ .aq-checkbox-toggle {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  border: 2px solid #565656;
+  border: 2px solid #6F6F6F;
   border-radius: 50%;
   cursor: pointer; }
 
 input[type="checkbox"].aq-checkbox:hover ~ .aq-checkbox-toggle {
-  border-color: #282828; }
+  border-color: #3D3D3D; }
 
 input[type="checkbox"].aq-checkbox:focus ~ .aq-checkbox-toggle {
-  border-color: #282828;
+  border-color: #3D3D3D;
   box-shadow: 0 0 0 2px rgba(75, 75, 75, 0.25); }
 
 input[type="checkbox"].aq-checkbox:checked ~ .aq-checkbox-toggle {
