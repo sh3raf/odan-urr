@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1,
 h2,
 h3,
@@ -388,7 +389,8 @@ em {
       left: 0;
       width: 100%;
       height: 2px;
-      transform: scaleX(0);
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
       transition: all 0.3s ease;
       content: "";
       visibility: hidden; }
@@ -397,7 +399,8 @@ em {
     .aq-btn--ghost:hover {
       background: rgba(23, 64, 94, 0); }
     .aq-btn--ghost:hover::after {
-      transform: scaleX(1);
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
       visibility: visible; }
 
 .aq-card {
@@ -418,7 +421,8 @@ em {
   .aq-card__img {
     max-width: 100%;
     height: auto;
-    object-fit: cover; }
+    -o-object-fit: cover;
+       object-fit: cover; }
   .aq-card__body {
     padding: 1rem .5rem; }
   .aq-card__title {
@@ -441,20 +445,73 @@ em {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     box-sizing: border-box; }
   .aq-card__footer {
     border-top: 1px solid #BEBEBE;
     padding: 1rem 0;
     color: #6F6F6F; }
 
+.aq-form-select {
+  display: block;
+  width: 100%;
+  margin: 0;
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  border: 1px solid #6F6F6F;
+  border-radius: 4px;
+  overflow: hidden; }
+  .aq-form-select:focus, .aq-form-select:hover {
+    border: 1px solid #3D3D3D; }
+  .aq-form-select::after {
+    content: '▾';
+    position: absolute;
+    top: 10%;
+    right: 1rem;
+    color: #6F6F6F;
+    font-size: 1rem;
+    line-height: 1.5;
+    z-index: 1; }
+
+select.aq-select {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: transparent;
+  background-image: none;
+  padding: 0.5rem 1rem;
+  color: #333;
+  font-size: 0.875rem;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  z-index: 2;
+  text-overflow: "";
+  text-indent: 5px; }
+
 input:-webkit-autofill {
   box-shadow: none; }
 
 .aq-input {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   padding: 0.5rem 1rem;
   color: #333;
+  font-size: 0.875rem;
   border: 1px solid #6F6F6F;
   border-radius: 4px; }
 
