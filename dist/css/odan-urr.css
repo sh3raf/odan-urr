@@ -515,6 +515,10 @@ input:-webkit-autofill {
   border: 1px solid #6F6F6F;
   border-radius: 4px; }
 
+.aq-label {
+  display: block;
+  color: #a4a4a4; }
+
 input[type="radio"].aq-checkbox {
   position: absolute;
   left: -10000px;

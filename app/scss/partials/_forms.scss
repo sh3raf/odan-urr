@@ -99,6 +99,11 @@ input:-webkit-autofill {
     border-radius: $inp-border-radius;
 }
 
+.#{$prefix}-label {
+    display: block;
+    color: $color__gray-40;
+}
+
 //  INPUT type="radio"
 
 input[type="radio"].#{$prefix}-checkbox {
