@@ -517,7 +517,8 @@ input:-webkit-autofill {
 
 .aq-label {
   display: block;
-  color: #a4a4a4; }
+  color: #a4a4a4;
+  margin-bottom: .25rem; }
 
 input[type="radio"].aq-checkbox {
   position: absolute;

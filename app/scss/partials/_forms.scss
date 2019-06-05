@@ -102,6 +102,7 @@ input:-webkit-autofill {
 .#{$prefix}-label {
     display: block;
     color: $color__gray-40;
+    margin-bottom: .25rem;
 }
 
 //  INPUT type="radio"
