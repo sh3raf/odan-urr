@@ -1,0 +1,71 @@
+// -------------------------------
+// --- HELPERS
+// -------------------------------
+
+.#{$prefix}-text-align {
+	&--left {
+		text-align: left;
+	}
+
+	&--center {
+		text-align: center;
+	}
+
+	&--right {
+		text-align: right;
+    }
+}
+
+.#{$prefix}-font-weight {
+	&--normal {
+		font-weight: 400;
+	}
+
+	&--bold {
+		font-weight: 700;
+	}
+}
+
+//  HELPER COLOR
+
+.#{$prefix}-brand--primary {
+    color: $color__brand--primary;
+}
+
+.#{$prefix}-brand--secondary {
+    color: $color__brand--secondary;
+}
+
+.#{$prefix}-brand--3 {
+    color: $color__brand--3;
+}
+
+.#{$prefix}-brand--4 {
+    color: $color__brand--4;
+}
+
+.#{$prefix}-brand--5 {
+    color: $color__brand--5;
+}
+
+//  HELPER BACKGROUND
+
+.#{$prefix}-bg-brand--primary {
+    background: $color__brand--primary;
+}
+
+.#{$prefix}-bg-brand--secondary {
+    background: $color__brand--secondary;
+}
+
+.#{$prefix}-bg-brand--3 {
+    background: $color__brand--3;
+}
+
+.#{$prefix}-bg-brand--4 {
+    background: $color__brand--4;
+}
+
+.#{$prefix}-bg-brand--5 {
+    background: $color__brand--5;
+}
