@@ -476,11 +476,11 @@ em {
   .aq-form-select::after {
     content: '▾';
     position: absolute;
-    top: 10%;
+    top: 0;
     right: 1rem;
     color: #6F6F6F;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 2;
     z-index: 1; }
 
 select.aq-select {
@@ -499,8 +499,7 @@ select.aq-select {
           appearance: none;
   cursor: pointer;
   z-index: 2;
-  text-overflow: "";
-  text-indent: 5px; }
+  text-overflow: ""; }
 
 input:-webkit-autofill {
   box-shadow: none; }
