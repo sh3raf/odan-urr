@@ -451,3 +451,48 @@ em {
     border-top: 1px solid #BEBEBE;
     padding: 1rem 0;
     color: #6F6F6F; }
+
+.aq-text-align--left {
+  text-align: left; }
+
+.aq-text-align--center {
+  text-align: center; }
+
+.aq-text-align--right {
+  text-align: right; }
+
+.aq-font-weight--normal {
+  font-weight: 400; }
+
+.aq-font-weight--bold {
+  font-weight: 700; }
+
+.aq-brand--primary {
+  color: #3ead52; }
+
+.aq-brand--secondary {
+  color: #17405e; }
+
+.aq-brand--3 {
+  color: #54819c; }
+
+.aq-brand--4 {
+  color: #89a8b5; }
+
+.aq-brand--5 {
+  color: #b2cbd9; }
+
+.aq-bg-brand--primary {
+  background: #3ead52; }
+
+.aq-bg-brand--secondary {
+  background: #17405e; }
+
+.aq-bg-brand--3 {
+  background: #54819c; }
+
+.aq-bg-brand--4 {
+  background: #89a8b5; }
+
+.aq-bg-brand--5 {
+  background: #b2cbd9; }
