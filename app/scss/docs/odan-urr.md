@@ -83,3 +83,46 @@ that you can use to style internal element of a card.
 #### Accordions
 
 [AQ-Accordions - Codepen](https://codepen.io/seraf8/pen/GayqYW)
+
+#### Forms
+
+[AQ-Forms - Codepen](https://codepen.io/seraf8/pen/wbYEyL)
+
+The structure for custom input fields, radio, and checkbox buttons is a substitution of default's one only if the enabler class `aq-checkbox-toggle` is present. Otherwise, the default one has normally show.
+
+Be sure to enclose the custom input element into a `<label></label>` html tag.
+
+```html
+<h3>Input - basic</h3>
+<div>
+  <input class="aq-input">
+</div>
+
+<h3>Radio button</h3>
+<div>
+  <label>
+    <input type="radio" class="aq-checkbox" name="like" id="yes" value="yes" checked>
+    <span class="aq-checkbox-toggle"></span>
+    <label for="yes">Yes</label>
+  </label>
+  <label>
+    <input type="radio" class="aq-checkbox" name="like" id="no" value="no">
+    <span class="aq-checkbox-toggle"></span>
+    <label for="no">No</label>
+  </label>
+</div>
+
+<h3>Checkbox</h3>
+<div>
+  <label>
+    <input type="checkbox" class="aq-checkbox">
+    <span class="aq-checkbox-toggle"></span>
+    <label>Checkbox</label>
+  </label>
+</div>
+
+<h3>Input - Submit</h3>
+<div>
+  <input type="submit" class="aq-btn">
+</div>
+```
