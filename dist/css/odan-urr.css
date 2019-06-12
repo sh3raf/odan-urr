@@ -483,6 +483,24 @@ em {
 .aq-brand--5 {
   color: #b2cbd9; }
 
+.aq-color--info {
+  color: #0091D5; }
+
+.aq-color--success {
+  color: #219840; }
+
+.aq-color--warning {
+  color: #FDD13A; }
+
+.aq-color--danger {
+  color: #D51A24; }
+
+.aq-color--gray-3 {
+  color: #BEBEBE; }
+
+.aq-color--gray-4 {
+  color: #a4a4a4; }
+
 .aq-bg-brand--primary {
   background: #3ead52; }
 
@@ -497,6 +515,24 @@ em {
 
 .aq-bg-brand--5 {
   background: #b2cbd9; }
+
+.aq-bg-color--info {
+  background: #0091D5; }
+
+.aq-bg-color--success {
+  background: #219840; }
+
+.aq-bg-color--warning {
+  background: #FDD13A; }
+
+.aq-bg-color--danger {
+  background: #D51A24; }
+
+.aq-bg-color--gray-3 {
+  background: #BEBEBE; }
+
+.aq-bg-color--gray-4 {
+  background: #a4a4a4; }
 
 .aq-accordion {
   width: 100%;

@@ -48,6 +48,30 @@
     color: $color__brand--5;
 }
 
+.#{$prefix}-color--info {
+	color: $color__info;
+}
+
+.#{$prefix}-color--success {
+	color: $color__success;
+}
+
+.#{$prefix}-color--warning {
+	color: $color__warning;
+}
+
+.#{$prefix}-color--danger {
+	color: $color__danger;
+}
+
+.#{$prefix}-color--gray-3 {
+	color: $color__gray-30;
+}
+
+.#{$prefix}-color--gray-4 {
+	color: $color__gray-40;
+}
+
 //  HELPER BACKGROUND
 
 .#{$prefix}-bg-brand--primary {
@@ -68,4 +92,28 @@
 
 .#{$prefix}-bg-brand--5 {
     background: $color__brand--5;
+}
+
+.#{$prefix}-bg-color--info {
+	background: $color__info;
+}
+
+.#{$prefix}-bg-color--success {
+	background: $color__success;
+}
+
+.#{$prefix}-bg-color--warning {
+	background: $color__warning;
+}
+
+.#{$prefix}-bg-color--danger {
+	background: $color__danger;
+}
+
+.#{$prefix}-bg-color--gray-3 {
+	background: $color__gray-30;
+}
+
+.#{$prefix}-bg-color--gray-4 {
+	background: $color__gray-40;
 }
