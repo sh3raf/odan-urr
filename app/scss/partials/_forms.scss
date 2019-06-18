@@ -43,6 +43,7 @@
     border: $inp-border solid $color__gray-60;
     border-radius: $inp-border-radius;
     overflow: hidden;
+    box-sizing: border-box;
 
     &:focus,
     &:hover {
@@ -96,6 +97,7 @@ input:-webkit-autofill {
     font-size: 0.875rem;
     border: $inp-border solid $color__gray-60;
     border-radius: $inp-border-radius;
+    outline: none;
 }
 
 .#{$prefix}-label {

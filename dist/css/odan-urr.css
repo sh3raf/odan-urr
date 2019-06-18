@@ -617,7 +617,8 @@ em {
   position: relative;
   border: 1px solid #6F6F6F;
   border-radius: 4px;
-  overflow: hidden; }
+  overflow: hidden;
+  box-sizing: border-box; }
   .aq-form-select:focus, .aq-form-select:hover {
     border: 1px solid #3D3D3D; }
   .aq-form-select::after {
@@ -659,7 +660,8 @@ input:-webkit-autofill {
   color: #333;
   font-size: 0.875rem;
   border: 1px solid #6F6F6F;
-  border-radius: 4px; }
+  border-radius: 4px;
+  outline: none; }
 
 .aq-label {
   display: block;
