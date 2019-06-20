@@ -1,0 +1,80 @@
+// -------------------------------
+// --- TABLE
+// -------------------------------
+
+.#{$prefix}-table {
+
+    &__container {
+        width: 100%;
+        min-height: 100%;
+        background: $color__white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        padding: 1rem 1.5rem;
+    }
+
+    &--responsive {
+        overflow-x: auto;
+    }
+}
+
+table.#{$prefix}-table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    display: table;
+    margin: 0;
+    padding: .5rem 1rem;
+    box-sizing: border-box;
+
+    & > thead {
+        text-align: left;
+    }
+
+    & > th {
+
+    }
+
+    & > tr {
+
+    }
+
+    & > td {
+
+    }
+}
+
+table.#{$prefix}-table--bb {
+
+    & > thead {
+        border-bottom: 2px solid $color__gray-20;
+    }
+
+    & > thead > tr {
+        border-bottom: 1px solid $color__gray-20;
+    }
+
+    & > tbody > tr {
+        border-bottom: 1px solid $color__gray-20;
+    }
+
+    & thead tr td {
+
+    }
+    & > tbody > tr {
+
+        & > td {
+            padding: .75rem .25rem;
+        }
+    }
+}
+
+table.#{$prefix}-table--stripes {
+
+    & > tbody > tr:nth-of-type(even) {
+        background: $color__gray-10;
+    }
+}

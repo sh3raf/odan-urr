@@ -2,6 +2,7 @@
 // --- MAIN SCSS
 // -------------------------------
 
+@import "partials/normalizer";
 @import "partials/colors";
 @import "partials/mixins";
 @import "partials/typography";
@@ -12,3 +13,4 @@
 @import "partials/helpers";
 @import "partials/accordion";
 @import "partials/forms";
+@import "partials/table";

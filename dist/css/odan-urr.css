@@ -1,4 +1,13 @@
 @charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body, html {
+  height: 100%;
+  font-family: sans-serif; }
+
 h1,
 h2,
 h3,
@@ -743,3 +752,42 @@ input[type="radio"].aq-checkbox ~ label,
 input[type="checkbox"].aq-checkbox ~ label {
   vertical-align: middle;
   font-size: 1rem; }
+
+.aq-table__container {
+  width: 100%;
+  min-height: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 1rem 1.5rem; }
+
+.aq-table--responsive {
+  overflow-x: auto; }
+
+table.aq-table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  display: table;
+  margin: 0;
+  padding: .5rem 1rem;
+  box-sizing: border-box; }
+  table.aq-table > thead {
+    text-align: left; }
+
+table.aq-table--bb > thead {
+  border-bottom: 2px solid #DCDCDC; }
+
+table.aq-table--bb > thead > tr {
+  border-bottom: 1px solid #DCDCDC; }
+
+table.aq-table--bb > tbody > tr {
+  border-bottom: 1px solid #DCDCDC; }
+
+table.aq-table--bb > tbody > tr > td {
+  padding: .75rem .25rem; }
+
+table.aq-table--stripes > tbody > tr:nth-of-type(even) {
+  background: #f3f3f3; }
