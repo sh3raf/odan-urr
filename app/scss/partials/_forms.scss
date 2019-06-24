@@ -208,6 +208,10 @@ input[type="checkbox"].#{$prefix}-checkbox:checked ~ .#{$prefix}-checkbox-toggle
     appearance: none;
 }
 
+textarea.#{$prefix}-textarea {
+    
+}
+
 //  SHARED RULES
 
 input[type="radio"].#{$prefix}-checkbox ~ label,
