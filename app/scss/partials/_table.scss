@@ -7,6 +7,7 @@
     &__container {
         width: 100%;
         min-height: 100%;
+        color: $color__black--safe;
         background: $color__white;
 
         display: flex;
@@ -34,20 +35,27 @@ table.#{$prefix}-table {
         text-align: left;
     }
 
-    & > th {
+    & thead tr th {
+        padding: .5rem 0;
+    }
+    & > tbody > tr {
 
+        & > td {
+            padding: .75rem .25rem;
+        }
     }
 
-    & > tr {
-
-    }
-
-    & > td {
-
+    &__buttons {
+        thead tr th:last-child {
+            text-align: end;
+        }
+        tbody tr td:last-child {
+            text-align: end;
+        }
     }
 }
 
-table.#{$prefix}-table--bb {
+table.#{$prefix}-table--b-bottom {
 
     & > thead {
         border-bottom: 2px solid $color__gray-20;
@@ -60,21 +68,18 @@ table.#{$prefix}-table--bb {
     & > tbody > tr {
         border-bottom: 1px solid $color__gray-20;
     }
-
-    & thead tr td {
-
-    }
-    & > tbody > tr {
-
-        & > td {
-            padding: .75rem .25rem;
-        }
-    }
 }
 
 table.#{$prefix}-table--stripes {
 
-    & > tbody > tr:nth-of-type(even) {
+    & > tbody > tr:nth-of-type(odd) {
         background: $color__gray-10;
+    }
+}
+
+table.#{$prefix}-table-hover {
+    & > tbody > tr:hover {
+        color: $color__black;
+        background: $color__gray-20;
     }
 }

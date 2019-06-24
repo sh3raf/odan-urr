@@ -756,6 +756,7 @@ input[type="checkbox"].aq-checkbox ~ label {
 .aq-table__container {
   width: 100%;
   min-height: 100%;
+  color: #333;
   background: #fff;
   display: flex;
   align-items: center;
@@ -776,18 +777,27 @@ table.aq-table {
   box-sizing: border-box; }
   table.aq-table > thead {
     text-align: left; }
+  table.aq-table thead tr th {
+    padding: .5rem 0; }
+  table.aq-table > tbody > tr > td {
+    padding: .75rem .25rem; }
+  table.aq-table__buttons thead tr th:last-child {
+    text-align: end; }
+  table.aq-table__buttons tbody tr td:last-child {
+    text-align: end; }
 
-table.aq-table--bb > thead {
+table.aq-table--b-bottom > thead {
   border-bottom: 2px solid #DCDCDC; }
 
-table.aq-table--bb > thead > tr {
+table.aq-table--b-bottom > thead > tr {
   border-bottom: 1px solid #DCDCDC; }
 
-table.aq-table--bb > tbody > tr {
+table.aq-table--b-bottom > tbody > tr {
   border-bottom: 1px solid #DCDCDC; }
 
-table.aq-table--bb > tbody > tr > td {
-  padding: .75rem .25rem; }
-
-table.aq-table--stripes > tbody > tr:nth-of-type(even) {
+table.aq-table--stripes > tbody > tr:nth-of-type(odd) {
   background: #f3f3f3; }
+
+table.aq-table-hover > tbody > tr:hover {
+  color: #000;
+  background: #DCDCDC; }
