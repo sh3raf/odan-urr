@@ -49,8 +49,13 @@ table.#{$prefix}-table {
         thead tr th:last-child {
             text-align: end;
         }
+        
         tbody tr td:last-child {
             text-align: end;
+        }
+
+        tbody tr td button {
+            margin-right: .5rem;
         }
     }
 }

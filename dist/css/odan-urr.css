@@ -785,6 +785,8 @@ table.aq-table {
     text-align: end; }
   table.aq-table__buttons tbody tr td:last-child {
     text-align: end; }
+  table.aq-table__buttons tbody tr td button {
+    margin-right: .5rem; }
 
 table.aq-table--b-bottom > thead {
   border-bottom: 2px solid #DCDCDC; }
