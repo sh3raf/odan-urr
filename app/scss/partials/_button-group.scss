@@ -1,0 +1,43 @@
+// -------------------------------
+// --- BUTTON GROUP
+// -------------------------------
+
+.#{$prefix}-btn-group button {
+    @include button-bg($color__gray-30);
+
+    display: inline-block;
+    padding: $btn-padding-y $btn-padding-x;
+    color: $color__white;
+    font-size: $base-font-size;
+    font-weight: $btn-font-weight;
+    border: $btn-border solid transparent;
+    border-radius: 0;
+    font-family: $font-primary;
+    float: left;
+    cursor: pointer;
+}
+
+.#{$prefix}-btn-group button:first-child {
+    border-top-left-radius: $btn-border-radius;
+    border-bottom-left-radius: $btn-border-radius;
+}
+
+.#{$prefix}-btn-group button:last-child {
+    border-top-right-radius: $btn-border-radius;
+    border-bottom-right-radius: $btn-border-radius;
+}
+
+//  float clearfix
+.#{$prefix}-btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.#{$prefix}-btn-group button:focus {
+    outline: none;
+}
+
+.#{$prefix}-btn-group button:active {
+    background: $color__brand--secondary;
+}
