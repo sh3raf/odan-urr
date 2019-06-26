@@ -1,0 +1,31 @@
+// -------------------------------
+// --- PAGINATION
+// -------------------------------
+
+.#{$prefix}-pagination {
+    display: inline-block;
+
+    & li {
+        display: inline;
+    }
+}
+
+.#{$prefix}-pagination li a {
+    display: inline-block;
+    padding: .5rem 1rem;
+    color: $color__black--safe;
+    border: $btn-border solid transparent;
+    border-radius: $btn-border-radius;
+    text-decoration: none;
+    cursor: pointer;
+
+    &.active {
+        border-radius: $btn-border-radius;
+        color: $color__white;
+        background: $color__brand--secondary;
+    }
+
+    &:hover:not(.active) {
+        background: $color__gray-20;
+    }
+}

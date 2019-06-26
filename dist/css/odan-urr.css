@@ -840,3 +840,23 @@ table.aq-table-hover > tbody > tr:hover {
 
 .aq-btn-group button:active {
   background: #17405e; }
+
+.aq-pagination {
+  display: inline-block; }
+  .aq-pagination li {
+    display: inline; }
+
+.aq-pagination li a {
+  display: inline-block;
+  padding: .5rem 1rem;
+  color: #333;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer; }
+  .aq-pagination li a.active {
+    border-radius: 4px;
+    color: #fff;
+    background: #17405e; }
+  .aq-pagination li a:hover:not(.active) {
+    background: #DCDCDC; }
