@@ -671,6 +671,18 @@ input:-webkit-autofill {
   border: 1px solid #6F6F6F;
   border-radius: 4px;
   outline: none; }
+  .aq-input::-webkit-input-placeholder {
+    color: #BEBEBE; }
+  .aq-input:-ms-input-placeholder {
+    color: #BEBEBE; }
+  .aq-input::-ms-input-placeholder {
+    color: #BEBEBE; }
+  .aq-input::placeholder {
+    color: #BEBEBE; }
+  .aq-input:required:valid {
+    border-color: #219840; }
+  .aq-input:focus:required:invalid {
+    border-color: #D51A24; }
 
 .aq-label {
   display: block;

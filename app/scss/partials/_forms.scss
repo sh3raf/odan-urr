@@ -98,6 +98,18 @@ input:-webkit-autofill {
     border: $inp-border solid $color__gray-60;
     border-radius: $inp-border-radius;
     outline: none;
+
+    &::placeholder {
+        color: $color__gray-30;
+    }
+
+    &:required:valid {
+        border-color: $color__success;
+    }
+
+    &:focus:required:invalid {
+        border-color: $color__danger;
+    }
 }
 
 .#{$prefix}-label {
