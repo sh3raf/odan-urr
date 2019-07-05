@@ -75,45 +75,45 @@
 //  HELPER BACKGROUND
 
 .#{$prefix}-bg-brand--primary {
-    background: $color__brand--primary;
+    background-color: $color__brand--primary !important;
 }
 
 .#{$prefix}-bg-brand--secondary {
-    background: $color__brand--secondary;
+    background-color: $color__brand--secondary !important;
 }
 
 .#{$prefix}-bg-brand--3 {
-    background: $color__brand--3;
+    background-color: $color__brand--3 !important;
 }
 
 .#{$prefix}-bg-brand--4 {
-    background: $color__brand--4;
+    background-color: $color__brand--4 !important;
 }
 
 .#{$prefix}-bg-brand--5 {
-    background: $color__brand--5;
+    background-color: $color__brand--5 !important;
 }
 
 .#{$prefix}-bg-color--info {
-	background: $color__info;
+	background-color: $color__info !important;
 }
 
 .#{$prefix}-bg-color--success {
-	background: $color__success;
+	background-color: $color__success !important;
 }
 
 .#{$prefix}-bg-color--warning {
-	background: $color__warning;
+	background-color: $color__warning !important;
 }
 
 .#{$prefix}-bg-color--danger {
-	background: $color__danger;
+	background-color: $color__danger !important;
 }
 
 .#{$prefix}-bg-color--gray-3 {
-	background: $color__gray-30;
+	background-color: $color__gray-30 !important;
 }
 
 .#{$prefix}-bg-color--gray-4 {
-	background: $color__gray-40;
+	background-color: $color__gray-40 !important;
 }

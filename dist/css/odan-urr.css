@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -362,6 +361,7 @@ em {
   color: #fff;
   font-size: 1rem;
   font-weight: 400;
+  line-height: 1 !important;
   border-radius: 4px;
   font-family: sans-serif; }
   .aq-btn:hover {
@@ -511,37 +511,37 @@ em {
   color: #a4a4a4; }
 
 .aq-bg-brand--primary {
-  background: #3ead52; }
+  background-color: #3ead52 !important; }
 
 .aq-bg-brand--secondary {
-  background: #17405e; }
+  background-color: #17405e !important; }
 
 .aq-bg-brand--3 {
-  background: #54819c; }
+  background-color: #54819c !important; }
 
 .aq-bg-brand--4 {
-  background: #89a8b5; }
+  background-color: #89a8b5 !important; }
 
 .aq-bg-brand--5 {
-  background: #b2cbd9; }
+  background-color: #b2cbd9 !important; }
 
 .aq-bg-color--info {
-  background: #0091D5; }
+  background-color: #0091D5 !important; }
 
 .aq-bg-color--success {
-  background: #219840; }
+  background-color: #219840 !important; }
 
 .aq-bg-color--warning {
-  background: #FDD13A; }
+  background-color: #FDD13A !important; }
 
 .aq-bg-color--danger {
-  background: #D51A24; }
+  background-color: #D51A24 !important; }
 
 .aq-bg-color--gray-3 {
-  background: #BEBEBE; }
+  background-color: #BEBEBE !important; }
 
 .aq-bg-color--gray-4 {
-  background: #a4a4a4; }
+  background-color: #a4a4a4 !important; }
 
 .aq-accordion {
   width: 100%;
@@ -624,20 +624,21 @@ em {
       -ms-user-select: none;
           user-select: none;
   position: relative;
-  border: 1px solid #6F6F6F;
+  border: 1px solid #a4a4a4;
   border-radius: 4px;
   overflow: hidden;
   box-sizing: border-box; }
   .aq-form-select:focus, .aq-form-select:hover {
     border: 1px solid #3D3D3D; }
   .aq-form-select::after {
-    content: '▾';
+    font-family: FontAwesome;
+    content: '\f0d7';
     position: absolute;
     top: 0;
     right: 1rem;
-    color: #6F6F6F;
+    color: #a4a4a4;
     font-size: 1rem;
-    line-height: 2;
+    line-height: 2.5;
     z-index: 1; }
 
 select.aq-select {
@@ -646,7 +647,7 @@ select.aq-select {
   width: 100%;
   background: transparent;
   background-image: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   color: #333;
   font-size: 0.875rem;
   border: none;
@@ -665,10 +666,10 @@ input:-webkit-autofill {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   color: #333;
   font-size: 0.875rem;
-  border: 1px solid #6F6F6F;
+  border: 1px solid #a4a4a4;
   border-radius: 4px;
   outline: none; }
   .aq-input::-webkit-input-placeholder {
